@@ -2,7 +2,12 @@
     "name": "cadsoft-ulp",
     "displayName": "Cadsoft EAGLE ULP Syntax Support",
     "description": "Provides support for EAGLE/Cadsofts ULP language",
-    "version": "0.0.1",
+    "publisher": "microtransactionsmattertoo",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MicroTransactionsMatterToo/vscode-ulp.git"
+    },
     "engines": {
         "vscode": "^1.40.0"
     },
