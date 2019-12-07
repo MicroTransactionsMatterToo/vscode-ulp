@@ -1,0 +1,28 @@
+{
+    "name": "cadsoft-ulp",
+    "displayName": "Cadsoft EAGLE ULP Syntax Support",
+    "description": "Provides support for EAGLE/Cadsofts ULP language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "scripts": {
+        "install": "js-yaml ./syntaxes/ulp.tmLanguage.yaml > ./syntaxes/ulp.tmLanguage.json"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "ulp",
+            "aliases": ["Cadsoft/Eagle ULP", "ulp"],
+            "extensions": [".ulp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ulp",
+            "scopeName": "source.ulp",
+            "path": "./syntaxes/ulp.tmLanguage.json"
+        }]
+    }
+}
